@@ -30,7 +30,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -179,7 +179,11 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="baseObject.h" />
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="myEllipse.h" />
+    <ClInclude Include="myLine.h" />
+    <ClInclude Include="myRect.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SDIObjModify.h" />
     <ClInclude Include="SDIObjModifyDoc.h" />
@@ -188,7 +192,11 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="baseObject.cpp" />
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="myEllipse.cpp" />
+    <ClCompile Include="myLine.cpp" />
+    <ClCompile Include="myRect.cpp" />
     <ClCompile Include="SDIObjModify.cpp" />
     <ClCompile Include="SDIObjModifyDoc.cpp" />
     <ClCompile Include="SDIObjModifyView.cpp" />
